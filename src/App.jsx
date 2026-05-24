@@ -23,7 +23,7 @@ export default function App() {
       </header>
 
       <section className="hero">
-        <img src="/photos/hero.jpg" alt="hero" />
+        <img src="./photos/hero.jpg" alt="hero" />
 
         <div className="overlay"></div>
 
@@ -54,7 +54,7 @@ export default function App() {
         <div className="grid">
 
           <img
-            src="/photos/medal.jpg"
+            src="./photos/medal.jpg"
             style={{ width: '100%', borderRadius: '28px' }}
           />
 
@@ -112,8 +112,8 @@ export default function App() {
           <h2 className="title">Pedigree</h2>
 
           <div className="grid">
-            <img src="/photos/pedigree-1.jpg" style={{ width: '100%', borderRadius: '24px' }} />
-            <img src="/photos/pedigree-2.jpg" style={{ width: '100%', borderRadius: '24px' }} />
+            <img src="./photos/pedigree-1.jpg" style={{ width: '100%', borderRadius: '24px' }} />
+            <img src="./photos/pedigree-2.jpg" style={{ width: '100%', borderRadius: '24px' }} />
           </div>
 
         </div>
@@ -124,10 +124,10 @@ export default function App() {
         <h2 className="title">Gallery</h2>
 
         <div className="gallery">
-          <img src="/photos/show-1.jpg" />
-          <img src="/photos/show-2.jpg" />
-          <img src="/photos/gallery-1.jpg" />
-          <img src="/photos/gallery-2.jpg" />
+          <img src="./photos/show-1.jpg" />
+          <img src="./photos/show-2.jpg" />
+          <img src="./photos/gallery-1.jpg" />
+          <img src="./photos/gallery-2.jpg" />
         </div>
 
       </section>
