@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="news.css" />
 </head>
@@ -20,8 +21,9 @@
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Achievements</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#gallery">Gallery</a></li>
+        <!-- <li><a href="#team">Team</a></li> -->
         <li><a href="news.html">News</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -35,7 +37,7 @@
   <!-- ─── HERO ─── -->
   <section id="hero" class="news-hero main-photo-hero">
     <div class="news-hero-bg">
-      <img src="images/news-hero.jpg" alt="Indigo Studio" class="news-hero-img" />
+      <img src="images/news-hero.jpg" alt="Lumina Studio" class="news-hero-img" />
       <div class="news-hero-overlay main-overlay"></div>
     </div>
     <div class="news-hero-content">
@@ -48,17 +50,17 @@
       </p>
       <div class="hero-actions reveal-up" style="--d:450ms">
         <button class="btn-primary" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">
-          Indigo Gallery
+          Explore Work
           <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <button class="btn-ghost-light" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Learn more</button>
       </div>
       <div class="hero-stats-light reveal-up" style="--d:600ms">
-        <div class="stat-light"><span class="stat-num" data-target="3">0</span><span></span><p>Chenpionships</p></div>
+        <div class="stat-light"><span class="stat-num" data-target="3">0</span><span>+</span><p>Chenpionships</p></div>
         <div class="stat-divider-light"></div>
-        <div class="stat-light"><span class="stat-num" data-target="18">0</span><span></span><p>CACIB, CAC, BOS, BOB</p></div>
+        <div class="stat-light"><span class="stat-num" data-target="20">0</span><span>%</span><p>CACIB, CAC, BOS, BOB</p></div>
         <div class="stat-divider-light"></div>
-        <div class="stat-light"><span class="stat-num" data-target="4">0</span><span></span><p>Years</p></div>
+        <div class="stat-light"><span class="stat-num" data-target="4">0</span><span>+</span><p>Years</p></div>
       </div>
     </div>
     <a href="#about" class="scroll-cue" aria-label="Scroll down">
@@ -74,10 +76,12 @@
           <div class="about-img-stack">
             <img src="images/about-main.jpg" alt="Studio" class="about-img about-img-main reveal-left" />
             <img src="images/about-sec.jpg" alt="Team" class="about-img about-img-sec reveal-left" style="--d:200ms" />
-            <div class="about-badge-exp reveal-scale" style="--d:400ms">
+            <!-- removed age badge
+<div class="about-badge-exp reveal-scale" style="--d:400ms">
               <p class="exp-num">4</p>
               <p class="exp-label">Years old</p>
             </div>
+--> 
           </div>
         </div>
         <div class="about-text">
@@ -92,22 +96,19 @@
             <div class="pillar">
               <div class="pillar-icon">✦</div>
               <div>
-                <h4>Bold thinking</h4>
-                <p>We challenge assumptions to find smarter solutions.</p>
+                <h4>Champion Bloodline</h4><p>Outstanding pedigree, balanced structure and excellent breed type.</p>
               </div>
             </div>
             <div class="pillar">
               <div class="pillar-icon">◈</div>
               <div>
-                <h4>Pixel-perfect craft</h4>
-                <p>Details are not details — they make the design.</p>
+                <h4>Show Ring Success</h4><p>Multiple championship titles and top placements under international judges.</p>
               </div>
             </div>
             <div class="pillar">
               <div class="pillar-icon">⬡</div>
               <div>
-                <h4>Long-term partnership</h4>
-                <p>We grow with our clients, not just for them.</p>
+                <h4>Friendly Temperament</h4><p>Confident, social and always ready to share the famous Samoyed smile.</p>
               </div>
             </div>
           </div>
@@ -122,8 +123,8 @@
     <div class="container">
       <div class="section-header">
         <p class="section-eyebrow reveal-up">Our achievements</p>
-        <h2 class="section-title reveal-up" style="--d:100ms">Champion Achievements</h2>
-        <p class="section-desc reveal-up" style="--d:200ms">Titles and awards earned in international dog shows.</p>
+        <h2 class="section-title reveal-up" style="--d:100ms">Show <em>Achievements</em></h2>
+        <p class="section-desc reveal-up" style="--d:200ms">Major titles and awards earned in international dog shows across Europe by the clients who trusted us with their boldest visions.</p>
       </div>
       <div class="services-grid">
         <div class="service-card reveal-up" style="--d:0ms">
@@ -133,67 +134,80 @@
               <path d="M20 4l3.6 7.3 8.1 1.2-5.9 5.7 1.4 8-7.2-3.8-7.2 3.8 1.4-8-5.9-5.7 8.1-1.2z" stroke="#2563eb" stroke-width="2" fill="none" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3>Champion of 3 Countries</h3><p>Official Champion of Poland, Lithuania and Slovakia.</p><a href="#gallery" class="service-link"></a>
+          <h3>Champion of 3 Countries</h3>
+          <p>Champion of Poland, Lithuania and Slovakia.</p>
+          <a href="#gallery" class="service-link">See the work →</a>
         </div>
         <div class="service-card reveal-up" style="--d:100ms">
-          <div class="service-icon-wrap" style="--icon-color:#2563eb">
+          <div class="service-icon-wrap" style="--icon-color:#1d4ed8">
             <svg viewBox="0 0 40 40" fill="none">
-              <circle cx="20" cy="20" r="14" stroke="#2563eb" stroke-width="2.5" fill="#2563eb" opacity=".1"></circle>
-              <path d="M14 20l4 4 8-8" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              <circle cx="20" cy="16" r="8" stroke="#1d4ed8" stroke-width="2.5" fill="#1d4ed8" opacity=".1"/>
+              <path d="M8 36c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="#1d4ed8" stroke-width="2.5" stroke-linecap="round"/>
             </svg>
           </div>
-<h3>CACIB × 1</h3><p>International championship certificate earned under FCI judges.</p><a href="#gallery" class="service-link"></a>
+          <h3>11× CAC</h3>
+          <p>11 CAC titles and 1 Res.CAC earned in competition.</p>
+          <a href="#contact" class="service-link">Join them →</a>
         </div>
         <div class="service-card reveal-up" style="--d:200ms">
-          <div class="service-icon-wrap" style="--icon-color:#60a5fa">
-            <svg viewBox="0 0 40 40" fill="none">
-              <path d="M10 20h6l5-12 5 24 5-12h9" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
-            </svg>
-          </div>
-<h3>Res.CACIB × 2</h3><p>Two Reserve CACIB awards against strong international competition.</p><a href="#gallery" class="service-link"></a>
-        </div>
-        <div class="service-card reveal-up" style="--d:300ms">
           <div class="service-icon-wrap" style="--icon-color:#3b82f6">
             <svg viewBox="0 0 40 40" fill="none">
-              <rect x="6" y="26" width="6" height="10" rx="2" fill="#3b82f6" opacity=".3"></rect>
-              <rect x="17" y="18" width="6" height="18" rx="2" fill="#3b82f6" opacity=".6"></rect>
-              <rect x="28" y="8" width="6" height="28" rx="2" fill="#3b82f6"></rect>
+              <rect x="6" y="26" width="6" height="10" rx="2" fill="#3b82f6" opacity=".3"/>
+              <rect x="17" y="18" width="6" height="18" rx="2" fill="#3b82f6" opacity=".6"/>
+              <rect x="28" y="8" width="6" height="28" rx="2" fill="#3b82f6"/>
             </svg>
           </div>
-<h3>CAC × 11</h3><p>Eleven CAC titles demonstrating consistent excellent performance.</p><a href="#gallery" class="service-link"></a>
+          <h3>1× CACIB & 2× Res.CACIB</h3>
+          <p>International championship level achievements.</p>
+          <a href="#about" class="service-link">Our approach →</a>
         </div>
-        <div class="service-card reveal-up" style="--d:400ms">
+        <div class="service-card reveal-up" style="--d:300ms">
           <div class="service-icon-wrap" style="--icon-color:#60a5fa">
             <svg viewBox="0 0 40 40" fill="none">
-              <path d="M10 20h6l5-12 5 24 5-12h9" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+              <path d="M10 20h6l5-12 5 24 5-12h9" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
             </svg>
           </div>
-<h3>BOB × 1 </h3><p>Best of Breed, highly rated by judges.</p><a href="#gallery" class="service-link"></a>
+          <h3>1× BOB & 2× BOS</h3>
+          <p>Best of Breed once and Best of Opposite Sex twice.</p>
+          <a href="#contact" class="service-link">Work with us →</a>
         </div>
-       <div class="service-card reveal-up" style="--d:400ms">
-        <div class="service-icon-wrap" style="--icon-color:#60a5fa">
-          <svg viewBox="0 0 40 40" fill="none">
-            <path d="M10 20h6l5-12 5 24 5-12h9" stroke="#60a5fa" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
-          </svg>
+        <div class="service-card reveal-up" style="--d:400ms">
+          <div class="service-icon-wrap" style="--icon-color:#2563eb">
+            <svg viewBox="0 0 40 40" fill="none">
+              <circle cx="20" cy="20" r="14" stroke="#2563eb" stroke-width="2.5" fill="#2563eb" opacity=".1"/>
+              <path d="M14 20l4 4 8-8" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Future Goals</h3>
+          <p>Continuing the journey toward new international titles and victories.</p>
+          <a href="#gallery" class="service-link">View portfolio →</a>
         </div>
-<h3>BOS × 2</h3><p>Best of Opposite Sex twice, highly rated by judges.</p><a href="#gallery" class="service-link"></a>
+        <div class="service-card service-card-cta reveal-up" style="--d:500ms">
+          <p class="cta-eyebrow">Career Highlights</p>
+          <h3>CACIB: 1 · ResCACIB: 2 · CAC: 11 · ResCAC: 1 · BOB: 1 · BOS: 2</h3>
+          <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Start a project
+            <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
         </div>
-</div></div></section>
+      </div>
+    </div>
+  </section>
 
   <!-- ─── GALLERY ─── -->
   <section id="gallery" class="section-gallery">
     <div class="container">
       <div class="section-header">
         <p class="section-eyebrow reveal-up">Our work</p>
-        <h2 class="section-title reveal-up" style="--d:100ms">Indigo <em>Gallery</em></h2>
-        <p class="section-desc reveal-up" style="--d:200ms">A collection of Indigo’s championship appearances, show highlights and memorable moments from the ring.</p>
+        <h2 class="section-title reveal-up" style="--d:100ms">Photo <em>Gallery</em></h2>
+        <p class="section-desc reveal-up" style="--d:200ms">A collection of Indigo’s best moments in the ring and everyday life.</p>
       </div>
       <div class="gallery-filters reveal-up" style="--d:300ms">
-        <button class="filter-btn active" data-filter="all">All Shows</button>
-        <button class="filter-btn" data-filter="brand">Championships</button>
-        <button class="filter-btn" data-filter="web">CAC/CACIB</button>
-        <button class="filter-btn" data-filter="motion">BOB/BOS</button>
-        <button class="filter-btn" data-filter="product">Gallery</button>
+        <button class="filter-btn active" data-filter="all">All Photos</button>
+        <button class="filter-btn" data-filter="brand">Shows</button>
+        <button class="filter-btn" data-filter="web">Championships</button>
+        <button class="filter-btn" data-filter="motion">Lifestyle</button>
+        <button class="filter-btn" data-filter="product">Training</button>
       </div>
       <div class="gallery-masonry" id="galleryGrid">
         <div class="gallery-item reveal-up" data-cat="brand" style="--d:0ms">
@@ -264,26 +278,24 @@
     </div>
   </section>
 
-  <!-- ─── TEAM ─── -->
-  <!-- Team section hidden -->
-
-  <!-- ─── CONTACT ─── -->
+  <!-- TEAM SECTION REMOVED -->
+<!-- ─── CONTACT ─── -->
   <section id="contact" class="section-contact">
     <div class="contact-bg-blob"></div>
     <div class="container">
       <div class="contact-grid">
         <div class="contact-info">
           <p class="section-eyebrow reveal-up">Get in touch</p>
-   <!--        <h2 class="section-title reveal-up" style="--d:100ms">Let's make something <em>great</em></h2>
+          <h2 class="section-title reveal-up" style="--d:100ms">Let's make something <em>great</em></h2>
           <p class="body-text reveal-up" style="--d:200ms">Have a project in mind? We'd love to hear from you. Send us a message and we'll get back within 24 hours.</p>
-    -->      <div class="contact-cards reveal-up" style="--d:300ms">
+          <div class="contact-cards reveal-up" style="--d:300ms">
             <div class="contact-detail">
               <div class="cd-icon">
                 <svg viewBox="0 0 24 24" fill="none"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </div>
               <div>
                 <p class="cd-label">Email us</p>
-                <a href="mailto:samoyed.smiling.indigo@gmail.com" class="cd-value">samoyed.smiling.indigo@gmail.com</a>
+                <a href="mailto:hello@lumina.studio" class="cd-value">hello@lumina.studio</a>
               </div>
             </div>
             <div class="contact-detail">
@@ -292,7 +304,7 @@
               </div>
               <div>
                 <p class="cd-label">Call us</p>
-                <a href="tel:+12345678900" class="cd-value">+48 786-659-565</a>
+                <a href="tel:+12345678900" class="cd-value">+1 (234) 567-8900</a>
               </div>
             </div>
             <div class="contact-detail">
@@ -301,7 +313,7 @@
               </div>
               <div>
                 <p class="cd-label">Visit us</p>
-                <span class="cd-value">41-400 Mysłowice, Poland</span>
+                <span class="cd-value">123 Creative Blvd, San Francisco, CA</span>
               </div>
             </div>
           </div>
@@ -320,7 +332,51 @@
             </a>
           </div>
         </div>
-        <!-- Contact form hidden --></div></section>
+        <div class="contact-form-wrap reveal-right" style="--d:200ms">
+          <form id="contactForm" class="contact-form" action="https://formspree.io/f/xpwqojke" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="first_name" placeholder="Alex" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="last_name" placeholder="Morgan" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="alex@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a topic…</option>
+                <option>Brand Identity</option>
+                <option>Product Design</option>
+                <option>Web Development</option>
+                <option>Motion & 3D</option>
+                <option>General enquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project…" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full">
+              Send message
+              <svg viewBox="0 0 20 20" fill="none"><path d="M3 10l14 0M10 3l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <p class="form-note">We respect your privacy. No spam, ever.</p>
+            <div id="formSuccess" class="form-success hidden">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#22c55e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p>Message sent! We'll be in touch soon.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ─── FOOTER ─── -->
   <footer class="footer">
@@ -328,7 +384,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#hero" class="nav-logo">
-            <span class="logo-dot"></span>Indigo
+            <span class="logo-dot"></span>Lumina
           </a>
           <p>Crafting digital experiences that inspire, connect, and endure.</p>
         </div>
@@ -336,13 +392,14 @@
           <h4>Navigation</h4>
           <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Achievements</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#gallery">Gallery</a></li>
+            <!-- <li><a href="#team">Team</a></li> -->
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Achievements</h4>
+          <h4>Services</h4>
           <ul>
             <li><a href="#services">Brand Identity</a></li>
             <li><a href="#services">Product Design</a></li>
@@ -360,7 +417,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Indigo. All rights reserved.</p>
+        <p>© 2024 Lumina Studio. All rights reserved.</p>
         <p>Made with care in San Francisco</p>
       </div>
     </div>

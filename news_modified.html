@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>News & Insights — Indigo Studio</title>
+  <title>News & Insights — Lumina Studio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
@@ -16,12 +17,13 @@
   <nav id="navbar" class="scrolled">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
-        <span class="logo-dot"></span>Indigo
+        <span class="logo-dot"></span>Lumina
       </a>
       <ul class="nav-links">
         <li><a href="index.html#about">About</a></li>
-        <li><a href="index.html#services">Achievements</a></li>
+        <li><a href="index.html#services">Services</a></li>
         <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#team">Team</a></li>
         <li><a href="news.html" class="nav-active">News</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
@@ -42,17 +44,17 @@
     </div>
     <div class="news-orb-content">
       <div class="hero-badge reveal-up" style="--d:0ms">
-        <span class="badge-dot"></span> Show Results & Achievements
+        <span class="badge-dot"></span> Fresh perspectives
       </div>
       <h1 class="news-orb-title reveal-up" style="--d:150ms">
-        News &amp; <em>Titles</em>
+        News &amp; <em>Insights</em>
       </h1>
       <p class="news-orb-sub reveal-up" style="--d:300ms">
-        Latest championship achievements, excellent performances and major milestones of Indigo.
+        Thoughts on design, technology, culture, and the creative process — straight from the studio floor.
       </p>
       <div class="news-orb-meta reveal-up" style="--d:450ms">
-        <span class="orb-badge-stat">3 championship news</span>
-        <span class="orb-badge-stat">Updated March 2026</span>
+        <span class="orb-badge-stat">6 articles</span>
+        <span class="orb-badge-stat">Updated May 2024</span>
       </div>
     </div>
     <a href="#news-content" class="scroll-cue" aria-label="Scroll down">
@@ -66,15 +68,31 @@
       <p class="section-eyebrow reveal-up">Featured</p>
       <article class="featured-card reveal-up" style="--d:100ms">
         <div class="featured-img-wrap">
-          <img src="images/Chempion_Slovacia.jpg" alt="Champion of Slovakia" loading="lazy" /><span class="featured-tag">Champion Title</span></div><div class="featured-body"><div class="post-meta"><span class="meta-date">March 1, 2026</span></div><h2 class="featured-title">Indigo Becomes Champion of Slovakia</h2><p class="featured-excerpt">After a series of excellent performances in the show ring, Indigo earned the prestigious Champion of Slovakia title. Judges consistently praised his movement, type, coat quality and overall presentation.</p><div class="featured-footer"">
+          <img src="images/news-1.jpg" alt="Design Trends 2024" loading="lazy" />
+          <span class="featured-tag">Design</span>
+        </div>
+        <div class="featured-body">
+          <div class="post-meta">
+            <img src="images/team-1.jpg" alt="Alex Morgan" class="meta-avatar" />
+            <span class="meta-author">Alex Morgan</span>
+            <span class="dot">·</span>
+            <span class="meta-date">May 14, 2024</span>
+            <span class="dot">·</span>
+            <span class="meta-read">8 min read</span>
+          </div>
+          <h2 class="featured-title">The Design Trends That Will Define the Next Decade</h2>
+          <p class="featured-excerpt">
+            From spatial interfaces to AI-generated aesthetics, the visual landscape is evolving at breakneck speed. We've spent the past year researching what's coming — and what it means for brands who want to stay ahead. Here's what every creative director should know in 2024 and beyond.
+          </p>
+          <div class="featured-footer">
             <a href="#article-1" class="btn-primary read-more-btn">
               Read article
               <svg viewBox="0 0 20 20" fill="none"><path d="M4 10h12M11 5l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </a>
             <div class="post-tags">
-              <span class="tag">Champion</span>
-              <span class="tag">Titles</span>
-              <span class="tag">News</span>
+              <span class="tag">Trends</span>
+              <span class="tag">Strategy</span>
+              <span class="tag">Future</span>
             </div>
           </div>
         </div>
@@ -87,9 +105,10 @@
     <div class="container">
       <div class="news-filters reveal-up">
         <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="news">News</button>
-        <button class="filter-btn" data-filter="titles">Titles</button>
-        <button class="filter-btn" data-filter="champion">Champion</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+        <button class="filter-btn" data-filter="tech">Technology</button>
+        <button class="filter-btn" data-filter="brand">Branding</button>
+        <button class="filter-btn" data-filter="culture">Culture</button>
       </div>
       <div class="news-search">
         <svg viewBox="0 0 20 20" fill="none"><circle cx="8.5" cy="8.5" r="5.5" stroke="#94a3b8" stroke-width="1.5"/><path d="M13 13l3.5 3.5" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -106,49 +125,48 @@
         <!-- Article 1 -->
         <article class="news-card reveal-up" data-cat="brand" style="--d:0ms" id="article-1">
           <a href="#article-1" class="news-card-img-wrap">
-            <img src="images/Chempion_Slovacia_show.jpg" alt="Branding in 2024" loading="lazy" />
-            <span class="news-tag">Champion</span>
+            <img src="images/news-2.jpg" alt="Branding in 2024" loading="lazy" />
+            <span class="news-tag">Branding</span>
           </a>
           <div class="news-card-body">
             <div class="post-meta">
-              <img src="images/Chempion_Slovacia_show.jpg" alt="Lara" class="meta-avatar" />
-              <span class="meta-author">Lara</span>
+              <img src="images/team-2.jpg" alt="Sofia Chen" class="meta-avatar" />
+              <span class="meta-author">Sofia Chen</span>
               <span class="dot">·</span>
-              <span class="meta-date">March 1, 2026</span>
+              <span class="meta-date">May 9, 2024</span>
             </div>
-            <h3><a href="#article-1"></a>Champion of Slovakia</a></h3>
-            <p>Indigo achieved the title of Champion of Slovakia after a series of outstanding performances. Highly praised by the judges for excellent movement, breed type, expression, and presentation in the ring.</p>
+            <h3><a href="#article-1">Why Brand Consistency Is Your Most Underrated Asset</a></h3>
+            <p>In a world where every touchpoint is a brand impression, inconsistency isn't just an aesthetic problem — it's a trust problem. We break down the psychology behind visual coherence and what it actually costs to get it wrong.</p>
             <div class="news-card-footer">
               <span class="meta-read">6 min read</span>
               <div class="post-tags">
-                <span class="tag">Champion</span>
-                <span class="tag">Slovakia</span>
+                <span class="tag">Brand</span>
+                <span class="tag">Identity</span>
               </div>
             </div>
           </div>
         </article>
 
-        
         <!-- Article 2 -->
         <article class="news-card reveal-up" data-cat="tech" style="--d:100ms">
           <a href="#article-2" class="news-card-img-wrap">
-            <img src="images/Chempion_Lituania.jpg" alt="Technology" loading="lazy" />
+            <img src="images/news-3.jpg" alt="Technology" loading="lazy" />
             <span class="news-tag">Technology</span>
           </a>
           <div class="news-card-body">
             <div class="post-meta">
-              <img src="images/Chempion_Slovacia_show.jpg" alt="Lara" class="meta-avatar" />
-              <span class="meta-author">Lara</span>
+              <img src="images/team-3.jpg" alt="James Rivera" class="meta-avatar" />
+              <span class="meta-author">James Rivera</span>
               <span class="dot">·</span>
-              <span class="meta-date">January 6, 2026</span>
+              <span class="meta-date">Apr 28, 2024</span>
             </div>
-            <h3><a href="#article-2">Champion of Lithuania</a></h3>
-            <p>A remarkable start to the year as Indigo earned the title of Champion of Lithuania. Consistent Excellent ratings and strong competition highlighted this achievement.</p>
+            <h3><a href="#article-2">WebGL and the New Era of Immersive Web Experiences</a></h3>
+            <p>Three.js, Spline, and real-time shaders have quietly become the new standard for premium digital brands. Here's how we're using WebGL to bring clients' visions to life — and what you need to start.</p>
             <div class="news-card-footer">
               <span class="meta-read">10 min read</span>
               <div class="post-tags">
-                <span class="tag">Champion</span>
-                <span class="tag">Lithuania</span>
+                <span class="tag">WebGL</span>
+                <span class="tag">3D</span>
               </div>
             </div>
           </div>
@@ -157,29 +175,29 @@
         <!-- Article 3 -->
         <article class="news-card reveal-up" data-cat="culture" style="--d:200ms">
           <a href="#article-3" class="news-card-img-wrap">
-            <img src="images/Chempion_Poland.jpg" alt="Studio culture" loading="lazy" />
+            <img src="images/news-4.jpg" alt="Studio culture" loading="lazy" />
             <span class="news-tag">Culture</span>
           </a>
           <div class="news-card-body">
             <div class="post-meta">
-              <img src="images/Chempion_Slovacia_show.jpg" alt="Lara" class="meta-avatar" />
-              <span class="meta-author">Lara</span>
+              <img src="images/team-4.jpg" alt="Mia Park" class="meta-avatar" />
+              <span class="meta-author">Mia Park</span>
               <span class="dot">·</span>
-              <span class="meta-date">March 18, 2024</span>
+              <span class="meta-date">Apr 15, 2024</span>
             </div>
-            <h3><a href="#article-3">Champion of Poland</a></h3>
-            <p>After several successful show appearances and excellent evaluations from international judges, Indigo officially became Champion of Poland.</p>
+            <h3><a href="#article-3">How We Run a 24-Person Remote Studio Without Losing the Magic</a></h3>
+            <p>Asynchronous work sounds great on paper. In reality it requires rethinking every ritual that makes a studio tick — critiques, creative jams, client demos. Here's what we figured out after three years of fully distributed work.</p>
             <div class="news-card-footer">
               <span class="meta-read">7 min read</span>
               <div class="post-tags">
-                <span class="tag">Champion</span>
-                <span class="tag">Poland</span>
+                <span class="tag">Culture</span>
+                <span class="tag">Remote</span>
               </div>
             </div>
           </div>
         </article>
 
-        <!-- Article 4
+        <!-- Article 4 -->
         <article class="news-card reveal-up" data-cat="design" style="--d:0ms">
           <a href="#article-4" class="news-card-img-wrap">
             <img src="images/news-5.jpg" alt="Web design" loading="lazy" />
@@ -203,8 +221,8 @@
             </div>
           </div>
         </article>
-      -->
-        <!-- Article 5 
+
+        <!-- Article 5 -->
         <article class="news-card reveal-up" data-cat="tech" style="--d:100ms">
           <a href="#article-5" class="news-card-img-wrap">
             <img src="images/news-6.jpg" alt="Motion" loading="lazy" />
@@ -228,8 +246,8 @@
             </div>
           </div>
         </article>
-      -->
-        <!-- Article 6 
+
+        <!-- Article 6 -->
         <article class="news-card reveal-up" data-cat="brand" style="--d:200ms">
           <a href="#article-6" class="news-card-img-wrap">
             <img src="images/gallery-1.jpg" alt="Brand strategy" loading="lazy" />
@@ -253,7 +271,7 @@
             </div>
           </div>
         </article>
-      -->
+
       </div>
 
       <!-- Empty state -->
@@ -272,7 +290,7 @@
     </div>
   </section>
 
-  <!-- ─── NEWSLETTER ─── 
+  <!-- ─── NEWSLETTER ─── -->
   <section class="news-newsletter">
     <div class="container">
       <div class="newsletter-card reveal-up">
@@ -298,14 +316,14 @@
       </div>
     </div>
   </section>
--->
+
   <!-- ─── FOOTER ─── -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="nav-logo">
-            <span class="logo-dot"></span>Indigo
+            <span class="logo-dot"></span>Lumina
           </a>
           <p>Crafting digital experiences that inspire, connect, and endure.</p>
         </div>
@@ -313,9 +331,9 @@
           <h4>Navigation</h4>
           <ul>
             <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#services">Achievements</a></li>
+            <li><a href="index.html#services">Services</a></li>
             <li><a href="index.html#gallery">Gallery</a></li>
-            <li><a href="index.html#team"/a></li>
+            <li><a href="index.html#team">Team</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="index.html#contact">Contact</a></li>
           </ul>
@@ -339,7 +357,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2024 Indigo Studio. All rights reserved.</p>
+        <p>© 2024 Lumina Studio. All rights reserved.</p>
         <p>Made with care in San Francisco</p>
       </div>
     </div>
