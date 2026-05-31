@@ -217,6 +217,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 32px;
   flex: 1;
+  background: rgb(199 202 219 / 97%) !important;
 }
 .nav-links a {
   font-size: 0.9rem;
@@ -1114,6 +1115,6 @@ a.cd-value:hover { color: var(--blue-600); }
 .stat-divider-light { width: 1px; height: 40px; background: rgba(255,255,255,.18); }
 
 @media (max-width: 768px) {
-  .main-photo-hero .news-hero-content { padding: 80px 24px 56px; }
+  .main-photo-hero .news-hero-content { padding: 24px 24px 56px; }
   .hero-stats-light { justify-content: center; }
 }
